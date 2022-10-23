@@ -1,0 +1,156 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Aria, Helvetica, sans-serif; 
+    background-color: #1B1B1B;
+}
+/*Textos*/
+h1.titulo{
+    -webkit-text-stroke: 0.5px aliceblue;
+    color:transparent; 
+    font-size: 80px; 
+    position: absolute;
+    bottom: 17%;
+    left: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+h1.titulo2{
+    -webkit-text-stroke: 1px aliceblue;
+    color:transparent;
+    font-size: 110px;
+    position: absolute;
+    left: 10px;
+    bottom: 3%;
+    padding: 0;
+    margin: 0;
+}
+
+.nev{
+    color:aliceblue;
+    position: absolute;
+    top: 10px;
+    left: 110px;
+    margin-top: 30px;
+}
+
+.tx{
+    color:gray; 
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 58px;
+    bottom: 20%;
+}
+
+/*Botões*/
+.but1{
+    position: absolute;
+    border-style:groove; 
+    background-color:transparent; 
+    border-color: gray; 
+    color:gray; 
+    width:148px; 
+    height: 46px; 
+    cursor: pointer;
+    right: 100px;
+    bottom: 10%;
+}
+
+.but2{
+    position: absolute;
+    border-style:groove; 
+    background-color:transparent; 
+    border-color: gray; 
+    color:gray; 
+    width:148px; 
+    height: 46px; 
+    cursor: pointer;
+    right: 300px;
+    bottom: 10%;
+}
+
+button:hover{
+    background-color: gray;
+    border-color: aliceblue;
+    color:aliceblue
+}
+#down {
+    font-family:Aria, Helvetica, sans-serif; 
+    margin-top: 50%;
+    padding-bottom: 50%;
+   } 
+
+/*Imagens*/
+.ph{
+    position: absolute;
+    right: 11%;
+    top: 25%;
+    width: 250px;
+    height: 250px;
+}
+
+.ImagensT{
+    width: 250px;
+    height: 250px;
+}
+
+.bat{
+    height: 30px;
+    width: 30px;
+}
+
+.seta{
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    right: 45%;
+    bottom: 1%;
+}
+
+.seta:hover{
+    filter: brightness(60%);
+}
+
+/*Listas*/
+
+.banda1{
+    filter: brightness(100%);
+    transition: .5s ease;
+    display: inline-block;
+}
+
+.banda1 img{
+    height: auto;
+    width: 300px;
+}
+
+.banda1:hover img{
+    filter: brightness(50%);
+}
+.banda1:hover .overlay1{
+    opacity: 1;
+}
+
+.overlay1{
+    opacity: 0;
+    display: block;
+    position:relative;
+    transition: .5s ease;
+}
+
+.overlay1 h1{
+    user-select: none;
+    color: transparent;
+    -webkit-text-stroke: 0.5px aliceblue;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 26%;
+    left: 8%;
+    bottom: 100%;
+}
+/*Posicionando elementos*/
