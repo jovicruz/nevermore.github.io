@@ -109,6 +109,15 @@ button:hover{
     height: 50px;
     right: 45%;
     bottom: 1%;
+    animation: up-down .7s linear infinite alternate;
+    
+}
+
+
+
+@keyframes up-down {
+   100%{
+    transform: translateY(20%)}
 }
 
 .seta:hover{
@@ -124,7 +133,7 @@ button:hover{
 }
 
 .banda1 img{
-    height: auto;
+    height: 200px;
     width: 300px;
 }
 
@@ -154,3 +163,8 @@ button:hover{
     bottom: 100%;
 }
 /*Posicionando elementos*/
+
+
+
+
+
