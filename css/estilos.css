@@ -6,6 +6,28 @@ body{
     font-family:Aria, Helvetica, sans-serif; 
     background-color: #1B1B1B;
 }
+
+#home{
+    height: 100vh;
+}
+.home{
+    position: fixed;
+    left: 0;
+    top:0;
+    margin: 1%;
+    margin-top: .5%;
+}
+.home h1{
+    color:aliceblue;
+    position: absolute;
+    top: 1px;
+    left: 45px;
+    font-size: 17px;
+}
+.home img{
+    height: auto;
+    width: 40px
+}
 /*Textos*/
 h1.titulo{
     -webkit-text-stroke: 0.5px aliceblue;
@@ -27,14 +49,6 @@ h1.titulo2{
     bottom: 3%;
     padding: 0;
     margin: 0;
-}
-
-.nev{
-    color:aliceblue;
-    position: absolute;
-    top: 10px;
-    left: 110px;
-    margin-top: 30px;
 }
 
 .tx{
@@ -80,8 +94,7 @@ button:hover{
 }
 #down {
     font-family:Aria, Helvetica, sans-serif; 
-    margin-top: 50%;
-    padding-bottom: 50%;
+    height: 100vh;
    } 
 
 /*Imagens*/
@@ -107,8 +120,8 @@ button:hover{
     position: absolute;
     width: 90px;
     height: 50px;
-    right: 45%;
-    bottom: 1%;
+    margin-left: 46%;
+    bottom: 2%;
     animation: up-down .7s linear infinite alternate;
     
 }
@@ -137,34 +150,66 @@ button:hover{
     width: 300px;
 }
 
-.banda1:hover img{
+.card:hover .background{
     filter: brightness(50%);
 }
-.banda1:hover .overlay1{
-    opacity: 1;
-}
 
-.overlay1{
-    opacity: 0;
-    display: block;
-    position:relative;
-    transition: .5s ease;
-}
-
-.overlay1 h1{
-    user-select: none;
-    color: transparent;
-    -webkit-text-stroke: 0.5px aliceblue;
-    position: absolute;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 26%;
-    left: 8%;
-    bottom: 100%;
-}
 /*Posicionando elementos*/
 
 
+/*GRID*/
+.grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-auto-rows: 250px;
+}
+
+.card {
+    box-shadow:inset 0 0 0 150vw rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .5s ease;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.card:hover{
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.5);
+ }
+
+.card-text{
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+    -webkit-text-stroke: 1px aliceblue;
+    color:transparent; 
+    user-select: none;
+    
+}
+
+.card:hover .card-text{
+    opacity: 1;
+}
+
+a:link { text-decoration: none; }
 
 
+a:visited { text-decoration: none; }
 
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
