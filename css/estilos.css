@@ -7,6 +7,19 @@ body{
     background-color: #1B1B1B;
 }
 
+body::-webkit-scrollbar{
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1B1B1B;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: aliceblue;
+}
+
 #home{
     height: 100vh;
 }
@@ -29,6 +42,12 @@ body{
     width: 40px
 }
 /*Textos*/
+h1.vazado{
+    -webkit-text-stroke: 0.5px aliceblue;
+    color:transparent;
+    text-align: center;
+}
+
 h1.titulo{
     -webkit-text-stroke: 0.5px aliceblue;
     color:transparent; 
@@ -58,6 +77,14 @@ h1.titulo2{
     position: absolute;
     right: 58px;
     bottom: 20%;
+}
+
+.txg{
+    color:gray; 
+    float: left;
+    font-size: 1.75rem;
+    margin: 1rempx;
+    
 }
 
 /*Botões*/
@@ -107,9 +134,25 @@ button:hover{
 }
 
 .ImagensT{
-    width: 250px;
-    height: 250px;
+   display: flex;
+   justify-content: center;
+    width: 100%;
+   height: auto;
+
 }
+
+.ImagensT2{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: auto;
+    
+ 
+ }
+
+ 
+
+
 
 .bat{
     height: 30px;
@@ -213,3 +256,34 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
+
+/*flex*/
+.flex_cont{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex{
+    margin: 30px;
+       
+}
+
+.flex_item{
+    
+    min-width: 260px;
+    flex-grow: 1;
+    flex-basis: 0;
+    
+    
+}
+
+.flex_item2{
+    
+    min-width:275px;
+    flex-grow: 2;
+    flex-basis: 0;
+    
+    
+}
