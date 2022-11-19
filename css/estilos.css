@@ -1,3 +1,4 @@
+/*Geral*/
 html{
     scroll-behavior: smooth;
 }
@@ -19,6 +20,8 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: aliceblue;
 }
+
+
 
 #home{
     height: 100vh;
@@ -71,48 +74,52 @@ h1.titulo2{
 }
 
 .tx{
+    margin-left: 20px;
     color:gray; 
     float: right;
-    font-size: 20px;
-    position: absolute;
-    right: 58px;
-    bottom: 20%;
+    font-size: 25px;
+    position: relative;
+    right: 1.5rem;
+    top: 7rem;
 }
 
 .txg{
     color:gray; 
     float: left;
     font-size: 1.75rem;
-    margin: 1rempx;
+    margin: 1px;
     
 }
 
 /*Botões*/
 .but1{
     position: absolute;
-    border-style:groove; 
+    border-style:solid; 
     background-color:transparent; 
     border-color: gray; 
     color:gray; 
-    width:148px; 
+    width:296px; 
     height: 46px; 
     cursor: pointer;
-    right: 100px;
+    right: 150px;
     bottom: 10%;
+    border-radius: 25px;
 }
 
-.but2{
+/*.but2{
     position: absolute;
-    border-style:groove; 
+    border-style:solid; 
     background-color:transparent; 
     border-color: gray; 
     color:gray; 
-    width:148px; 
+    width:296px;  
     height: 46px; 
     cursor: pointer;
     right: 300px;
     bottom: 10%;
-}
+    border-radius: 25px;
+} 
+*/
 
 button:hover{
     background-color: gray;
@@ -126,11 +133,12 @@ button:hover{
 
 /*Imagens*/
 .ph{
-    position: absolute;
-    right: 11%;
-    top: 25%;
+    position: relative;
+    top: 42%;
+    margin-right: 19%;
     width: 250px;
     height: 250px;
+    float: right;
 }
 
 .ImagensT{
@@ -151,9 +159,6 @@ button:hover{
  }
 
  
-
-
-
 .bat{
     height: 30px;
     width: 30px;
@@ -257,6 +262,34 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.c-item{
+    
+    padding: 20px;
+    
+    
+}
+
+.i1{  
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.i2{
+    grid-column-start: 2;
+}
+
+.i3{
+    grid-column-start: 2;
+    
+ }
+
 /*flex*/
 .flex_cont{
     display: flex;
@@ -283,7 +316,98 @@ a:active { text-decoration: none; }
     
     min-width:275px;
     flex-grow: 2;
-    flex-basis: 0;
+    flex-basis: 0;   
+}
+/*Responsividade*/
+@media (width <= 799px){
+    .container{
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
     
+    .c-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
     
+    .i1{  
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .i2{
+        grid-row-start: 1;
+    }
+    
+    .i3{
+        grid-row-start: 3;
+        
+     }
+
+    h1.titulo{
+        -webkit-text-stroke: 0.5px aliceblue;
+        color:transparent; 
+        font-size: 80px; 
+        position: relative;
+        bottom: 17%;
+        left: 1px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1.titulo2{
+        -webkit-text-stroke: 1px aliceblue;
+        color:transparent;
+        font-size: 110px;
+        position: relative;
+        left: 10px;
+        bottom: 3%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seta{
+        position: relative;
+        width: 50px;
+        height: 20px;
+        margin-left: 46%;
+        bottom: 3rem;
+        animation: up-down .7s linear infinite alternate;
+        
+    }
+    .tx{
+        margin-left: 20px;
+        color:gray; 
+        float: right;
+        font-size: 20px;
+        position: relative;
+        right: 2.75rem;
+        top:2px;
+    }
+    .but1{
+        position: relative;
+        border-style:solid; 
+        background-color:transparent; 
+        border-color: gray; 
+        color:gray; 
+        width:296px; 
+        height: 46px; 
+        cursor: pointer;
+        top: -0.80rem;
+        margin-left:40%;
+        border-radius: 25px;
+    }
+
+    .ph{
+        position: relative;
+        top: 42%;
+        margin-right: 27%;
+        width: 250px;
+        height: 250px;
+        
+    }
 }
