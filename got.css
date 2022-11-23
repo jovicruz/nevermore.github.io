@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+}
+.corpo{
+    width: 1000px;
+    margin: auto;
+}
+h5, h3{
+    text-align: center;
+}
+.conteudo{
+    display: table;
+}
+img{
+    width: 500px;
+
+}
+.imagem{
+    display: table-cell;
+    float: left;
+    padding: 15px;
+
+}
+.texto{
+    display: table-cell;
+    float: left;
+    width: 400px;
+    margin-top: -10px;
+    margin-left: 2.5px;
+    line-height: 2;
+}
