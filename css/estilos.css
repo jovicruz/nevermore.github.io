@@ -5,6 +5,7 @@ html{
 
 body{
     font-family:Aria, Helvetica, sans-serif; 
+    color: gray;
     background-color: #1B1B1B;
 }
 
@@ -20,7 +21,6 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: aliceblue;
 }
-
 
 
 #home{
@@ -45,7 +45,19 @@ body::-webkit-scrollbar-thumb{
     width: 40px
 }
 /*Textos*/
-h1.vazado{
+
+
+
+.texto{
+    display: table-cell;
+    float: left;
+    width: 400px;
+    margin-top: -10px;
+    margin-left: 2.5px;
+    line-height: 2;
+}
+
+.vazado{
     -webkit-text-stroke: 0.5px aliceblue;
     color:transparent;
     text-align: center;
@@ -61,6 +73,7 @@ h1.titulo{
     padding: 0;
     margin: 0;
 }
+
 
 h1.titulo2{
     -webkit-text-stroke: 1px aliceblue;
@@ -88,6 +101,7 @@ h1.titulo2{
     float: left;
     font-size: 1.75rem;
     margin: 1px;
+    
     
 }
 
@@ -185,6 +199,14 @@ button:hover{
     filter: brightness(60%);
 }
 
+
+.imagem{
+    display: table-cell;
+    float: left;
+    padding: 15px;
+
+}
+
 /*Listas*/
 
 .banda1{
@@ -202,7 +224,6 @@ button:hover{
     filter: brightness(50%);
 }
 
-/*Posicionando elementos*/
 
 
 /*GRID*/
@@ -411,3 +432,4 @@ a:active { text-decoration: none; }
         
     }
 }
+
